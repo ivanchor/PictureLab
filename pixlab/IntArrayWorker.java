@@ -10,6 +10,30 @@ public class IntArrayWorker
   {
     matrix = theMatrix;
   }
+  
+    public int getColTotal(int n){
+    int  total = 0;
+    for(int row = 0; row<matrix.length; row++){
+        for(int col=0; col<matrix[row].length; col++){
+            if(col==n){
+                total+=matrix[row][col];
+            }
+        }
+    }
+    return total;
+  }
+    
+  public int getLargest(){
+    int largest = matrix[0][0];
+    for(int row = 0; row<matrix.length; row++){
+        for(int col=0; col<matrix[row].length; col++){
+            if(matrix[row][col]>largest){
+                largest=matrix[row][col];
+            }
+        }
+    }
+    return largest;
+    }
   public int getCount(int n){
       int count=0;
       for(int row=0;row<matrix.length;row++){
