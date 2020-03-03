@@ -9,6 +9,59 @@
 public class PictureTester
 {
   
+  /** Method to test mirrorDiagonal*/
+  public static void testMirrorDiagonal()
+  {
+    Picture caterpillar = new Picture("beach.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorDiagonal();
+    caterpillar.explore();
+  }
+  
+  /** Method to test mirrorHorizontalBotToTop */
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontalBotToTop();
+    caterpillar.explore();
+  }
+  
+  /** Method to test mirrorHorizontal */
+  public static void testMirrorHorizontal()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
+  
+  /** Method to test mirrorRightToLeft */
+  public static void testMirrorRightToLeft()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorRightToLeft();
+    caterpillar.explore();
+  }
+  
+  /** Method to test fixUnderwater */
+  public static void testFixUnderwater()
+  {
+    Picture beach = new Picture("water.jpg");
+    beach.explore();
+    beach.fixUnderwater();
+    beach.explore();
+  }
+  
+  /** Method to test grayScale */
+  public static void testGrayScale()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayScale();
+    beach.explore();
+  }
   
   /** Method to test negate */
   public static void testNegate()
@@ -100,10 +153,14 @@ public class PictureTester
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
+    //testNegate();
     //testGrayScale();
     //testFixUnderwater();
     //testMirrorVertical();
+    //testMirrorRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
     ////testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
