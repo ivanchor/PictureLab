@@ -8,6 +8,32 @@
  */
 public class PictureTester
 {
+  /** Method to test copy*/
+  public static void testCopy(Picture picture, int y, int x)
+  {
+    Picture caterpillar = new Picture("seagull.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorGull();
+    caterpillar.explore();
+  }
+  
+  /** Method to test mirrorGull*/
+  public static void testMirrorGull()
+  {
+    Picture caterpillar = new Picture("seagull.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorGull();
+    caterpillar.explore();
+  }
+  
+  /** Method to test mirrorArms*/
+  public static void testMirrorArms()
+  {
+    Picture caterpillar = new Picture("snowman.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorArms();
+    caterpillar.explore();
+  }
   
   /** Method to test mirrorDiagonal*/
   public static void testMirrorDiagonal()
@@ -160,12 +186,11 @@ public class PictureTester
     //testMirrorRightToLeft();
     //testMirrorHorizontal();
     //testMirrorHorizontalBotToTop();
-    testMirrorDiagonal();
-    ////testMirrorTemple();
+    //testMirrorDiagonal();
+    //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    //testMirrorDiagonal();
-    //testCollage();
+    testCollage(Picture beach, 100 ,200);
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
