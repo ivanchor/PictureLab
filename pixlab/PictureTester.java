@@ -8,12 +8,20 @@
  */
 public class PictureTester
 {
-  /** Method to test copy*/
-  public static void testCopy(Picture picture, int y, int x)
+  /** Method to test the myCollage method */
+  public static void testMyCollage()
   {
-    Picture caterpillar = new Picture("seagull.jpg");
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
+  
+  /** Method to test copy*/
+  public static void testCopy()
+  {
+    Picture caterpillar = new Picture("beach.jpg");
     caterpillar.explore();
-    caterpillar.mirrorGull();
+    caterpillar.copy(caterpillar,27,248,158,36);
     caterpillar.explore();
   }
   
@@ -167,6 +175,13 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+  /** Method to test edgeDetection */
+  public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
+    swan.explore();
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -190,10 +205,11 @@ public class PictureTester
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    testCollage(Picture beach, 100 ,200);
+    //testCollage();
     //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
+    //testMyCollage();
+    testEdgeDetection();
+    testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
